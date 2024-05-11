@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #9c19e0, #ffdaea, #6829e5);
+    color: #ffffff;
+    min-height: 100vh;
+    transition: background 0.3s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.title h1 {
+    font-size: 36px;
+    font-weight: 600;
+    animation: bounce 1s infinite alternate;
+}
+
+.container {
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.white-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 100px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 500px;
+    position: relative;
+    z-index: 2;
+}
+
+.start-learning {
+    font-size: 28px;
+    color: #091f36;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 15%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
+
+.buttons img {
+    max-width: 100px;
+    height: auto;
+}
+
+.video-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    background-color: rgba(1, 1, 1, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ffffff;
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.video-list.show {
+    max-height: 200px;
+}
+
+.video-list li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
